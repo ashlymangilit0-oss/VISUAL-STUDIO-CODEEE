@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        .radio-group {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .radio-group label {
+            width: auto;
+            margin-right: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 6px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Enrollment Form</h1>
+
+<form action="" method="post">
+
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="firstname" required><br>
+
+<label for="mname">Middle Name:</label>
+<input type="text" id="mname" name="middlename"><br>
+
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lastname" required><br>
+
+<label for="bdate">Birth Date:</label>
+<input type="date" id="bdate" name="birthdate"><br>
+
+<label for="age">Age:</label>
+<input type="number" id="age" name="age"><br>
+
+<label for="year">Year Level:</label>
+<select id="year" name="yearlevel" required>
+<option value="">Select</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select><br>
+
+<label for="course">Course:</label>
+<select id="course" name="course" required>
+<option value="">Select</option>
+<option>CT</option>
+<option>ACT</option>
+<option>BSOA</option>
+<option>HM</option>
+</select><br>
+
+<label>Sex:</label>
+<div class="radio-group">
+    <label><input type="radio" name="gender" value="Male" required> Male</label>
+    <label><input type="radio" name="gender" value="Female"> Female</label>
+</div>
+<br>
+
+<label for="cstatus">Civil Status:</label>
+<select id="cstatus" name="civil_status" required>
+<option value="">Select</option>
+<option>Single</option>
+<option>Married</option>
+<option>Widowed</option>
+<option>Separated</option>
+<option>Divorced</option>
+</select><br>
+
+<label for="region">Region:</label>
+<input type="text" id="region" name="region" required><br>
+
+<label for="province">Province:</label>
+<input type="text" id="province" name="province" required><br>
+
+<label for="city">City:</label>
+<input type="text" id="city" name="city" required><br>
+
+<label for="barangay">Barangay:</label>
+<input type="text" id="barangay" name="barangay" required><br>
+
+<label for="street">House No/Street:</label>
+<input type="text" id="street" name="street" required><br>
+
+<label for="contact">Contact No:</label>
+<input type="tel" id="contact" name="contact"><br>
+
+<label for="credentials">Credentials Submitted:</label>
+<select id="credentials" name="credentials">
+<option value="">Select</option>
+<option>Form 138</option>
+<option>Birth Certificate</option>
+<option>Good Moral</option>
+<option>Transcript of Records</option>
+<option>Picture</option>
+</select><br>
+
+<div class="buttons">
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
